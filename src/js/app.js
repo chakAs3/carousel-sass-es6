@@ -85,19 +85,18 @@ function previousSlide() {
 }
 // go to slide n
 function goToSlide(n) {
-    console.log(" N:"+n);
+
     slides[currentSlide].className = 'slide-item';
     let o =  document.getElementById("o"+currentSlide) //.className ="";
-    console.log(" slides.length  "+ slides.length+"  "+(n%slides.length) );
     o.className = "";
-    currentSlide = (n%slides.length) ;// (n + slides.length ) % slides.length;
-    console.log( " currentSlide "+currentSlide);
+
+    currentSlide = (n % slides.length) ;// (n + slides.length ) % slides.length;
     slides[currentSlide].className = 'slide-item fade';
-      console.log( " currentSlide "+currentSlide);
+
     o = document.getElementById("o"+n);
-    o.className = "active";
-    //update indicator
-  //  document.getElementById("o"+currentSlide) //.className ="active";
+    o.className = "active";   //update indicator styles
+
+
 }
 
 
@@ -116,8 +115,7 @@ function addItem(data,active="",index){
  let image = document.createElement('img');
  image.src = data.links.logo2x;
  image.alt = data.name ;
- //image.width = "460" ;
- //image.height = "345";
+
 
  let caption =   document.createElement('div');
  caption.className = "carousel-caption";
@@ -128,17 +126,15 @@ function addItem(data,active="",index){
  item.appendChild(caption);
 
  document.getElementById('slides').appendChild(
-   item // add item to DOM Message
+   item // add slide item to DOM
  );
- let indicator = document.createElement('li');
+ let indicator = document.createElement('li'); // create indicator element 
  indicator.setAttribute("data-target","#myCarousel");
  indicator.setAttribute("data-slide-to",index);
  indicator.setAttribute("id","o"+index);
  indicator.className ="btn-info "+ (active=="fade"?"active":"") ;
  let i = index;
  indicator.addEventListener("click",() => {
-    //goToSlide(this.getAttribute("data-slide-to")) ;
-      console.log( i );
       goToSlide(i);
   }  );
  document.getElementById('carousel-indicators').appendChild(indicator);
@@ -152,9 +148,10 @@ function getJSON(url) {
      if (xhr.readyState === 4) {
        if (xhr.status === 200) {
      let  brokerList =  JSON.parse(xhr.responseText) ;
-         console.log( brokerList );
+
        createCarouselItem(brokerList.data);
        initCarousel();
+
        } else {
          console.log(xhr.responseText);
        }
