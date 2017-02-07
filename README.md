@@ -26,6 +26,6 @@ to see the final result it is deployed here [Demo online](http://trixlabs.com/ww
 
 ## Conclusion :
 
-It is good to challenge yourself by writing only Vanilla Javascript in your project, you can win more performance and be more aware of what is under the hood, so you can fix things in your way, But it is absolutely not a productive way. The code that you can write with Angular JS in 15 mins and easily to maintain later on you need probably 2 hours or more to get there and it may not be perfect result and not easy to be maintained by other team members. But anyway to be an angular or react developer, you have to be first a Vanilla Javascript developer .
+It is good to challenge yourself by writing only Vanilla Javascript in your project, you can win more performance and be more aware of what is under the hood, so you can fix things in your way, But it is absolutely not a productive way. The code that you can write with Angular JS in 15 mins and easily to maintain later on you need probably 2 hours or more to get there and it may not be a perfect result and not easy to be maintained by other team members. But anyway to be an angular or react developer, you have to be first a Vanilla Javascript developer .
 
 I may code a new version using Angular 2 (NG CLI comes with sass, unity test, e2e, easy to stage your project before deployment, and pushing code source on github with build deployment on Github pages  ), just to compare between these techniques and frameworks .
