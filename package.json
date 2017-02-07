@@ -1,0 +1,33 @@
+{
+  "name": "vanilla_finder",
+  "version": "0.1.0",
+  "description": "Finder with Webpack ES6 SASS",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chakir",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "url-loader": "^0.5.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015-webpack": "^6.4.3",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.26.1",
+    "doiuse": "^2.5.0",
+    "extract-text-webpack-plugin": "^2.0.0-beta",
+    "node-sass": "^4.5.0",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-loader": "^1.2.2",
+    "postcss-nested": "^1.0.0",
+    "sass-loader": "^4.1.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
+  }
+}
