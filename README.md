@@ -1,14 +1,14 @@
 # carousel-sass-es6
 
 
-It is a simple carousel loading data from JSON file (it could be loaded directly from the REST API , but it has to be cross domaine origin allowed .
+It is a simple carousel module that loads data from JSON file (data could be retrieved directly by calling the REST API , but it has to be cross domaine origin allowed .
 
-I have used the following Tools :
+I have used the following Tools and frameworks :
 
 ##ES6 :
  Very easily to write code in modern ECMAScript 6 standards  
 ##Yo ( Yoaman ) :
- to scaffold my project easily to a structured folder using file generating and configurations
+ to scaffold my project easily to a structured folders using file generators and kick start configurations
 ##Webpack :
  A very handy module bundler  and  task manager i have used it to implement SASS , and Babel from ES6 to ES5  Javascript supported in all browsers , as well from watching file changes , run and build my project .
 ##Sass :
